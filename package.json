@@ -1,0 +1,32 @@
+{
+  "name": "invision-extensions-iframe-sdk",
+  "version": "0.0.1",
+  "description": "Small utility library for communicating between InVision and an iframe extension app.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
+    "build" : "tsc",
+    "prepare": "npm run build"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Profitbase/invision-extensions-iframe-sdk.git"
+  },
+  "keywords": [
+    "invision",
+    "iframe",
+    "extensions",
+    "api",
+    "communication",
+    "messaging"
+  ],
+  "author": "Tore Senneseth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Profitbase/invision-extensions-iframe-sdk/issues"
+  },
+  "homepage": "https://github.com/Profitbase/invision-extensions-iframe-sdk#readme",
+  "typings": "dist/index.d.ts",
+  "files": ["dist/**/*"]  
+}
