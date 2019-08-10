@@ -4,7 +4,7 @@ export default class invision {
         const targetInfo = (window as any).invision_ext_iframe_api;
 
         if(!targetInfo){
-            console.error('Not hosted inside an InVision iFrame or communication is not initialized.')
+            console.error('Not hosted inside an InVision iFrame or communication is not initialized.');
             return;
         }
 
