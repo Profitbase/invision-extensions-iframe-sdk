@@ -1,4 +1,4 @@
-# invision-iframe-api
+# invision-extensions-iframe-sdk
 
 ## Installation
 
@@ -12,7 +12,6 @@ npm i invision-extensions-iframe-sdk
 2) Call invision.sendMessage(...);
 ``` TSX
 import React, { useState } from 'react';
-import './App.css';
 import invision from 'invision-extensions-iframe-sdk';
 
 const App: React.FC = () => {
@@ -22,7 +21,7 @@ const App: React.FC = () => {
   const sendMessage = () =>{    
     invision.sendMessage({
       message: message
-    })
+    });
   }
 
   return (
