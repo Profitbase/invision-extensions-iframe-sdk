@@ -7,6 +7,11 @@ Using npm:
 npm i invision-extensions-iframe-sdk
 ```
 
+Using yarn:
+```
+yarn add invision-extensions-iframe-sdk
+```
+
 ## Example
 1) Import invision from 'invision-extensions-iframe-sdk'
 2) Call invision.sendMessage(...);
