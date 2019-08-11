@@ -1,7 +1,7 @@
 {
   "name": "invision-extensions-iframe-sdk",
-  "version": "0.0.1",
-  "description": "Small utility library for communicating between InVision and an iframe extension app.",
+  "version": "0.0.2",
+  "description": "Small utility library for communicating between Profitbase InVision and an iframe extension app.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,5 +28,5 @@
   },
   "homepage": "https://github.com/Profitbase/invision-extensions-iframe-sdk#readme",
   "typings": "dist/index.d.ts",
-  "files": ["dist/**/*"]  
+  "files": ["dist/index.js"]  
 }
