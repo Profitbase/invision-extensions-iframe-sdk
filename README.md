@@ -18,17 +18,27 @@ const App: React.FC = () => {
 
   const [message, setMessage] = useState();
   const [receivedMessage, setReceivedMessage] = useState();
-
+  
+  // Receives the message sent from the Workbook.
+  // We recommend that you always check the event origin and message format to ensure that you
+  // are are not processing malicious data.
   const onMessageReceived = (evt: MessageEvent) => {
     setReceivedMessage(evt.data);
   }
 
   useEffect(() => {
+    // The (Workbook) iframe component that hosts this app will send messages using the window.postMessage() API,
+    // so we need to set up a listener to receive messages.
+    // Note! We do not provide an API for receiving messages through window.postMessage(), 
+    // because that may trip up features of you app if you are using window messaging elsewhere.
     window.addEventListener('message', onMessageReceived);
     return () => window.removeEventListener('message', onMessageReceived);
   });
 
   const sendMessage = () => {
+    // Use invision.sendMessage(...) to send a message to the iframe Workbook component
+    // that hosts this app, so that it can be handled by the Workbook business logic.
+    // Using this API ensures that the message is sent to the correct receiver.
     invision.sendMessage({
       message: message
     });
@@ -53,4 +63,5 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 ```
