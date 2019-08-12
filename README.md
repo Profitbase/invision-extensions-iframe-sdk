@@ -13,7 +13,7 @@ yarn add @profitbase/invision-extensions-iframe-sdk
 ```
 
 ## Example
-1) Import invision from 'invision-extensions-iframe-sdk'
+1) Import invision from '@profitbase/invision-extensions-iframe-sdk'
 2) Call invision.sendMessage(...);
 ``` TSX
 import React, { useState, useEffect } from 'react';
