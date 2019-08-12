@@ -17,7 +17,7 @@ yarn add @profitbase/invision-extensions-iframe-sdk
 2) Call invision.sendMessage(...);
 ``` TSX
 import React, { useState, useEffect } from 'react';
-import invision from 'invision-extensions-iframe-sdk';
+import invision from '@profitbase/invision-extensions-iframe-sdk';
 
 const App: React.FC = () => {
 
