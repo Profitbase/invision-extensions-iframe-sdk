@@ -4,12 +4,12 @@ A small utility library for communicating between Profitbase InVision and an ifr
 
 Using npm:
 ```
-npm i invision-extensions-iframe-sdk
+npm i @profitbase/invision-extensions-iframe-sdk
 ```
 
 Using yarn:
 ```
-yarn add invision-extensions-iframe-sdk
+yarn add @profitbase/invision-extensions-iframe-sdk
 ```
 
 ## Example

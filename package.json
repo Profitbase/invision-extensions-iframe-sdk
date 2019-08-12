@@ -1,5 +1,5 @@
 {
-  "name": "invision-extensions-iframe-sdk",
+  "name": "@profitbase/invision-extensions-iframe-sdk",
   "version": "0.0.4",
   "description": "Small utility library for communicating between Profitbase InVision and an iframe extension app.",
   "main": "dist/index.js",
