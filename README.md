@@ -44,9 +44,7 @@ const App: React.FC = () => {
     // Use invision.sendMessage(...) to send a message to the iframe Workbook component
     // that hosts this app, so that it can be handled by the Workbook business logic.
     // Using this API ensures that the message is sent to the correct receiver.
-    invision.sendMessage({
-      message: message
-    });
+    invision.sendMessage(message);
   }
 
   return (
