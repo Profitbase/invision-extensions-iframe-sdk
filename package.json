@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc",
-    "build" : "tsc",
+    "build": "tsc",
     "prepare": "npm run build"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Profitbase/invision-extensions-iframe-sdk.git"
@@ -26,7 +26,14 @@
   "bugs": {
     "url": "https://github.com/Profitbase/invision-extensions-iframe-sdk/issues"
   },
-  "homepage": "https://github.com/Profitbase/invision-extensions-iframe-sdk#readme",  
+  "homepage": "https://github.com/Profitbase/invision-extensions-iframe-sdk#readme",
   "types": "dist/index.d.ts",
-  "files": ["dist/**/*"]
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2"
+  }
 }
